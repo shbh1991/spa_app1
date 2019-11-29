@@ -1,3 +1,66 @@
-p {
-  font-family: Lato;
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  .delete{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+  }
+  .delete:hover, .edit:hover, .save:hover{
+    cursor: pointer;
+  }
+  .edit{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+  }
+  .gst{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+  }
+ 
+  .save{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+  }
+  .flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+  }
+  .space-evenly { 
+    justify-content: space-evenly; 
+  }
+  .gstWrapper{
+    position: relative;
+  display: inline-block;
+  }
+.gstWrapper .text {
+  visibility: hidden;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px 0;
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.gstWrapper:hover .text {
+  visibility: visible;
 }
